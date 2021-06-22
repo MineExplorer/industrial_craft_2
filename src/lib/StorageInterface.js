@@ -1,6 +1,6 @@
 LIBRARY({
     name: "StorageInterface",
-    version: 11,
+    version: 12,
     shared: true,
     api: "CoreEngine"
 });
@@ -225,7 +225,7 @@ var TileEntityInterface = /** @class */ (function () {
             var slotData = this.slots[name];
             if (slotData.output) {
                 var item = this.container.getSlot(name);
-                if (item.id !== 0 && this.isValidSlotSide(slotData.side, side) && (!slotData.canOutput || slotData.canOutput(item, side, this.tileEntity))) {
+                if (this.isValidSlotSide(slotData.side, side) && (!slotData.canOutput || slotData.canOutput(item, side, this.tileEntity))) {
                     slotNames.push(name);
                 }
             }
