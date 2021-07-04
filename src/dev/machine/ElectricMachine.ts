@@ -43,7 +43,7 @@ namespace Machine {
 			this.data.energy += ChargeItemRegistry.getEnergyFromSlot(this.container.getSlot(slotName), "Eu", amount, this.getTier());
 		}
 
-		energyTick(type: string, src: any): void {}
+		energyTick(type: string, src: EnergyTileNode): void {}
 
 		energyReceive(type: string, amount: number, voltage: number): number {
 			let maxVoltage = this.getMaxPacketSize();

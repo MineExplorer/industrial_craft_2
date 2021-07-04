@@ -27,7 +27,7 @@ namespace Machine {
 			return this.getMaxPacketSize();
 		}
 
-		energyTick(type: string, src: any): void {
+		energyTick(type: string, src: EnergyTileNode): void {
 			let maxVoltage = this.getMaxPacketSize();
 			if (this.data.increaseMode) {
 				if (this.data.energy >= maxVoltage) {

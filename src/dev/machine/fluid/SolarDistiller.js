@@ -34,7 +34,7 @@ MachineRegistry.registerPrototype(BlockID.solarDistiller, {
 		return guiSolarDistiller;
 	},
 
-	init: function() {
+	onInit: function() {
 		this.data.canSeeSky = this.region.canSeeSky(this.x, this.y + 1, this.z);
 	},
 

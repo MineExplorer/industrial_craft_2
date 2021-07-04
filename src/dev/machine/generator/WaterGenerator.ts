@@ -32,7 +32,7 @@ namespace Machine {
 			return null;
 		}
 
-		energyTick(type: string, src: any): void {
+		energyTick(type: string, src: EnergyTileNode): void {
 			if (World.getThreadTime()%20 == 0) {
 				this.data.output = 0;
 				let biome = this.biomeCheck(this.x, this.z);

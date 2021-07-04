@@ -13,7 +13,7 @@ namespace Machine {
 			return true;
 		}
 
-		energyTick(type: string, src: any): void {
+		energyTick(type: string, src: EnergyTileNode): void {
 			let output = Math.min(this.data.energy, this.getMaxPacketSize());
 			this.data.energy += src.add(output) - output;
 		}

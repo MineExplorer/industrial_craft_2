@@ -50,7 +50,7 @@ namespace Machine {
 			return 0;
 		}
 
-		energyTick(type: string, src: any): void {
+		energyTick(type: string, src: EnergyTileNode): void {
 			if (src.add(this.data.energy) < this.data.energy) {
 				this.data.energy = 0;
 			}

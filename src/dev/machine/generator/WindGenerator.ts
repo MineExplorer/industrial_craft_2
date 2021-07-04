@@ -41,7 +41,7 @@ namespace Machine {
 			if (this.dimension != 0) this.selfDestroy();
 		}
 
-		energyTick(type: string, src: any): void {
+		energyTick(type: string, src: EnergyTileNode): void {
 			if (++this.data.ticker % 128 == 0) {
 				if (this.data.ticker % 1024 == 0) {
 					this.updateBlockCount();

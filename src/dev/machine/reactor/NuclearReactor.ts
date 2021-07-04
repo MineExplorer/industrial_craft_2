@@ -178,7 +178,7 @@ namespace Machine {
 			this.container.sendChanges();
 		}
 
-		energyTick(type: string, src: any): void {
+		energyTick(type: string, src: EnergyTileNode): void {
 			let output = this.getEnergyOutput();
 			src.add(output, Math.min(output, 8192));
 		}
