@@ -51,7 +51,7 @@ namespace MachineRecipeRegistry {
 
 	export function getRecipeResult(name: string, key1: string|number, key2?: string|number) {
 		let data = this.requireRecipesFor(name);
-		if (data) {
+		if (data && key1) {
 			return data[key1] || data[key1+":"+key2];
 		}
 		return null;
