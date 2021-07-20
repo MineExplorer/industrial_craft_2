@@ -1,3 +1,5 @@
+/// <reference path="./CropMatronGUI.ts" />
+
 namespace Machine {
 	export class CropMatron extends ElectricMachine {
 		liquidTank: BlockEngine.LiquidTank;

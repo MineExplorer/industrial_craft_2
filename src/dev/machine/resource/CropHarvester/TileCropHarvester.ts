@@ -1,3 +1,5 @@
+/// <reference path="./CropHarvesterGUI.ts" />
+
 namespace Machine {
 	export class CropHarvester extends ElectricMachine {
 		defaultValues = {

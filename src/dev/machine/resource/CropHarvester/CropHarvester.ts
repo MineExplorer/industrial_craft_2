@@ -1,3 +1,5 @@
+/// <reference path="./TileCropHarvester.ts" />
+
 IDRegistry.genBlockID("cropHarvester");
 Block.createBlock("cropHarvester", [
 	{ name: "Crop Harvester", texture: [["machine_bottom", 0], ["crop_harvester", 0]], inCreative: true }
